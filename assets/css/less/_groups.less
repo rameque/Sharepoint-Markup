@@ -1,0 +1,180 @@
+body,
+html {
+    height: 100%;
+}
+#groupSection {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+    aside {
+        background-color: @brand-color;
+        height: 100%;
+        background-image: url('images/bg.png'), linear-gradient(to bottom, rgba(255, 255, 255, 0.27), #eef3f7);
+        background-position: 0 -76px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        > header {
+            h2 {
+                text-align: center;
+                img {
+                    max-width: 70%;
+                }
+                span {
+                    display: none;
+                }
+            }
+        }
+
+        .bz-menu-link{
+
+          color:#415a69;
+          font-weight: 300;
+          display: block;
+          text-align: left;
+          padding: 10px 13px;
+          background-color: transparent;
+          width: 240px;
+          transition: background-color 0.1s ease-in-out;
+
+          span{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            font-size: 1.5em;
+          }
+
+          i{
+            font-size: 2em;
+            display: inline-block;
+            vertical-align: middle;
+            color:#4a90e2;
+          }
+
+          &:hover, &.bz-active{
+            text-decoration: none;
+            background-color: #0070c9;
+            color: #fff;
+
+            i{
+              color: #fff;
+            }
+          }
+        }
+
+        &.bz-aside-short {
+            width: 52px;
+            position: absolute;
+            .bz-aside-action-menu {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &.bz-aside-expand{
+          width: 240px;
+          position: absolute;
+        }
+    }
+
+    .bz-work-wrapper {
+        height: 100%;
+        background-color: #FFFFFF;
+        background-image: url("images/bg-content.png");
+        background-position: -50px 0;
+        background-repeat: no-repeat;
+        overflow-y: auto;
+
+        .bz-card {
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.0784314) 0 2px 4px 0;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding: 15px 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.0196078);
+            position: relative;
+            .bz-actions-bar__right {
+                float: right;
+                position: absolute;
+                top: 10px;
+                right: 15px;
+            }
+            h3 {
+                margin-bottom: 0;
+            }
+            .bz-card-content {
+                margin-top: 15px;
+            }
+            .bz-button {
+                border: solid 1px #9b9b9b;
+                padding: 6px 12px;
+                text-transform: uppercase;
+                font-size: 0.95em;
+                margin: 0 5px;
+                &:hover {
+                    text-decoration: none;
+                    border: solid 1px #4a90e2;
+                }
+            }
+            .bz-button__active {
+                border: solid 1px #4a90e2;
+            }
+        }
+    }
+    .bz-avatar {
+        border-radius: 100%;
+        background: gray;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .bz-avatar__small {
+        width: 40px;
+        height: 40px;
+    }
+    .bz-avatar__medium {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bz-right-panel{
+      transition: padding 0.2s ease-in-out;
+    }
+
+
+    .bz-aside-wrapper {
+      transition: width 0.2s ease-in-out;
+    }
+
+
+    .bz-right-short, .bz-right-expand {
+        padding-left: 52px;
+        height: 100%;
+
+        .bz-work-wrapper {
+            background-position: -49px -32px;
+
+            > .row > header {
+                padding-left: 40px;
+                h2 {
+                    text-align: center;
+                    img {
+                        max-width: 70%;
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .bz-right-expand {
+        padding-left: 240px;
+      }
+
+
+}

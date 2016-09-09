@@ -1,0 +1,80 @@
+#groupSection {
+    .bz-card {
+        &.bz-task-module {
+            .bz-actions-bar__right {
+                top: 93px;
+            }
+
+            .bz-card-content {
+                header {
+                    h4 {
+                        color: #4a90e2;
+                        font-size: 1.6em;
+                    }
+
+                    small {
+                        color: #7f7f7f;
+                        font-size: 0.95em;
+                    }
+                }
+
+                .bz-task-md-percent-bar {
+                    text-align: right;
+                    font-size: 2em;
+                    color: #b8b8b8;
+                    font-weight: 300;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 90%;
+                        height: 3px;
+                        background-color: #e8ebee;
+                        position: absolute;
+                        top: 50%;
+                    }
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 22%;
+                        height: 3px;
+                        background-color: #32b46d;
+                        position: absolute;
+                        top: 50%;
+                    }
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style: none;
+
+                        h5 {
+                            font-weight: bold;
+                            font-size: 1.1em;
+                        }
+
+                        small {
+                            color: #7f7f7f;
+                            font-size: 0.95em;
+                        }
+
+                        p {
+                            color: #f85f72;
+                        }
+
+                        .bz-col-status{
+                          small{
+                            display: block;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
